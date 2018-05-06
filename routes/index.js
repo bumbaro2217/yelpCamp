@@ -7,6 +7,10 @@ const User     = require("../models/user");
 // AUTH ROUTES
 // ===========
 
+router.get("/", function(req, res){
+   res.render("landing");
+});
+
 // show register form
 router.get("/register", function(req, res){
    res.render("register");
